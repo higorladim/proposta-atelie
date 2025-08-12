@@ -24,7 +24,7 @@
                     Proposta comercial - Marketing
                 </span>
             </a>
-            <button class="btn btn-secondary" type="submit">Contratar</button>
+            <a href="#pricing"><button class="btn btn-secondary">Contratar</button></a>
         </div>
         </div>
     </nav>
@@ -189,7 +189,7 @@
                         </div>
                         <div class="card-footer text-center">
                             <strong style="font-size: 1.5rem;">R$ 899,99</strong><br>
-                            <button class="btn btn-primary mt-2">Solicitar proposta</button>
+                            <a href="https://wa.me/5511998121628/?text=tenho interesse na campanha unica" target="_blank"><button class="btn btn-primary mt-2">Solicitar proposta</button></a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                         </div>
                         <div class="card-footer text-center">
                             <strong style="font-size: 1.5rem;">R$ 1.700,00/mês</strong><br>
-                            <button class="btn btn-warning mt-2">Solicitar proposta</button>
+                            <a href="https://wa.me/5511998121628/?text=tenho interesse no plano mensal" target="_blank"><button class="btn btn-warning mt-2">Solicitar proposta</button></a>
                         </div>
                     </div>
                 </div>
@@ -248,9 +248,9 @@
                         <div class="card-footer text-center">
                             <strong style="font-size: 1.5rem;">R$ 2.300,00/mês</strong><br>
                             <small class="text-muted">Total do trimestre: R$ 6.900,00</small><br>
-                            <button class="btn btn-success mt-2" onclick:
-                                href="https://wa.me/5511998121628/?text=tenho%interesse%no%plano%trimestral">Solicitar
-                                proposta</button>
+                            <a href="https://wa.me/5511998121628/?text=tenho interesse no plano trimestral" target="_blank"> <button
+                                    class="btn btn-success mt-2">Solicitar
+                                    proposta</button></a>
                         </div>
                     </div>
                 </div>
@@ -332,11 +332,9 @@
     </section>
 
 
+    <!--Essa section contém o botão do portfólio e serve como footer da página -->
 
-    <!--get updates / modal trigger essa parte aqui é só para definir o botão que vai acionar o modal, ai depois vem o código que ativa ele-->
-
-
-    <section class="bg-light">
+    <section id="portfolio" class="bg-light">
         <div class="container p-3">
             <div class="text-center">
                 <h2>Conheça o nosso portfólio!</h2>
@@ -351,61 +349,11 @@
         </div>
     </section>
 
-
-    <!--modal itself modal é como se fosse um pop up-->
-    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal-title">Get the Lastest Updates</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odio, officia enim cupiditate
-                        consectetur suscipit?</p>
-                    <label for="modal-email" class="form-label">Your email address:</label>
-                    <input type="email" class="form-control" id="modal-email" placeholder="e.g.mario@example.com">
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary">
-                        Submit
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--offcanvas / side bar, é utilizado para chamar uma barra, pode ser no lado esquerdo, direito, cima ou baixo, contendo qualquer informação que deseje-->
-
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcavas-body">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est sunt possimus fugiat iure autem. Provident?
-            </p>
-
-            <!--Dropdown-->
-
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown"
-                    data-bs-toggle="dropdown">
-                    Choose a book title
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="book-dropdown">
-                    <li><a href="#" class="dropdown-item">Become a React Super Hero</a></li>
-                    <li><a href="#" class="dropdown-item">Conquering Vue.js</a></li>
-                    <li><a href="#" class="dropdown-item">BLevelling up Your Next.js</a></li>
-            </div>
-        </div>
-    </div>
-    </div>
-
+    <!-- Javascript para o accordion -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <!--Esse é o javascript para usar o tooltip-->
+    
 
 </body>
 
